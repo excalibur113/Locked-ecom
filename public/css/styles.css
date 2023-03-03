@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+/* -----navbar----- */
+
+.fix {
+    position: fixed;
+}
+
+.add-button {
+    background-color: #bb5555; 
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    width: 90%!important;
+    border: 2px solid #bb5555!important;
+}
+
+.add-button:hover {
+    background-color: #bb555571;
+    color: #fff;
+}
+
+.search-button-container {
+    width: 90%!important;
+}
+
+
+nav {
+    height: 100vh;
+}
+
+.category-container {
+    width: 90%;
+    
+}
+
+.category-link {
+    text-decoration: none;
+    padding: 10px 0;
+    transition: all .2s ease-in-out;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 2px solid #ffffff00;
+}
+
+.category-link:hover{
+    transform: translateX(10px);
+    border-bottom: 2px solid #bb5555;
+}
+
+.store_name {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.footer ul li {
+    font-size: 10px;
+    /* border-right: 1px solid #fff; */
+    margin: 0px 7px;
+}
+
+.footer ul li:nth-child(1) {
+    list-style-type: none;
+}
+
+
+/* ------ body ------ */
+
+.container {
+    margin: 50px auto;
+}
+
+.main-row {
+    height: 100vh;
+}
+
+/* ------ edit-product ------ */
+
+.row.small-images{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cover-form-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.cover-form {
+    min-width: 390px;
+    height: 100%!important;
+    object-fit: cover!important;
+}
+
+.cover-image {
+    height: 100%!important;
+    object-fit: cover!important;
+    box-shadow: 0px 5px 20px -10px  rgba(0, 0, 0, 0.1);
+}
+
+.delete-cover {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    border: 0;
+    background-color: rgba(252, 252, 252, 0);
+}
+
+.cover-form-container:hover .delete-cover {
+    opacity: 1;
+}
+
+.delete-cover:hover{
+    transform: scale(1.2);
+    text-shadow: 1px 1px 20px rgba(49, 48, 48, 0.7);
+}
+
+.small-images-column  {
+    position: relative;
+    height: 100px;
+    object-fit: cover;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    border: 2px solid #bb555500;
+}
+
+.small-image {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.delete-small-images{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: #000000;
+    text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    border: 0;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.delete-small-images:hover {
+    transform: scale(1.2);
+    text-shadow: 1px 1px 20px rgba(49, 48, 48, 0.7);
+}
+
+.small-images-column:hover .delete-small-images {
+    opacity: 1;
+}
+
+/* ------ homepage ------ */
+
+.desc-column {
+    width: 500px!important;
+}
+
+.text-container {
+    min-height: 100px!important;
+}
+
+.text-container p {
+    overflow: hidden; /* hide overflow content */
+    white-space: wrap; /* prevent line breaks */
+    text-overflow: ellipsis; /* display ellipsis when text is cut off */
+    display: -webkit-box;     /* Use WebKit for multi-line layout */
+    -webkit-line-clamp: 3;    /* Set number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+thead th {
+    font-size: 20px;
+}
+
+/* ------ edit-product form ------ */
+
+.edit-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
